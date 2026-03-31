@@ -535,33 +535,50 @@ body {
         align-items: center;
         text-align: left;
         padding-top: 1.5rem;
+        position: relative;
+        min-height: 600px;
+        overflow: hidden;
     }
 
+    /* heropc covers the full hero section as background */
     .hero-visual {
-        flex: 1;
-        height: 600px;
-        order: 2;
-        /* Move image to right side on desktop */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         margin-top: 0;
+        z-index: 0;
     }
 
     .hero-image-container {
         background-image: url('heropc.png');
         background-position: right center;
+        background-size: cover;
     }
 
+    /* Linear gradient: dark on left (text area) → transparent on right */
     .hero-image-container::after {
-        background: radial-gradient(circle at left, var(--bg-dark), transparent 80%);
+        background: linear-gradient(
+            to right,
+            rgba(7, 7, 7, 1)   0%,
+            rgba(7, 7, 7, 0.88) 35%,
+            rgba(7, 7, 7, 0.35) 65%,
+            rgba(7, 7, 7, 0)   100%
+        );
         bottom: 0;
-        right: auto;
-        width: 50%;
+        left: 0;
+        right: 0;
+        width: 100%;
         height: 100%;
     }
 
     .hero-content {
-        flex: 1;
-        order: 1;
-        padding: 0 3rem;
+        position: relative;
+        z-index: 2;
+        flex: 0 0 55%;
+        max-width: 55%;
+        padding: 4rem 3rem;
         margin-top: 0;
     }
 
