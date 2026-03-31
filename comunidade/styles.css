@@ -527,20 +527,23 @@ body {
 /* Media Queries for Desktop */
 @media (min-width: 768px) {
     .content-wrapper {
-        max-width: 1000px;
+        max-width: 1200px;
     }
 
+    /* Hero breaks out to full viewport width */
     .hero-section {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
         flex-direction: row;
         align-items: center;
         text-align: left;
-        padding-top: 1.5rem;
+        padding: 0;
         position: relative;
-        min-height: 600px;
+        min-height: 620px;
         overflow: hidden;
     }
 
-    /* heropc covers the full hero section as background */
+    /* heropc covers the full hero as background */
     .hero-visual {
         position: absolute;
         top: 0;
@@ -553,18 +556,18 @@ body {
 
     .hero-image-container {
         background-image: url('heropc.png');
-        background-position: right center;
+        background-position: center center;
         background-size: cover;
     }
 
-    /* Linear gradient: dark on left (text area) → transparent on right */
+    /* Gradient: dark left for text readability → transparent right */
     .hero-image-container::after {
         background: linear-gradient(
             to right,
-            rgba(7, 7, 7, 1)   0%,
-            rgba(7, 7, 7, 0.88) 35%,
-            rgba(7, 7, 7, 0.35) 65%,
-            rgba(7, 7, 7, 0)   100%
+            rgba(7, 7, 7, 1)    0%,
+            rgba(7, 7, 7, 0.92) 30%,
+            rgba(7, 7, 7, 0.4)  60%,
+            rgba(7, 7, 7, 0)    100%
         );
         bottom: 0;
         left: 0;
@@ -576,9 +579,10 @@ body {
     .hero-content {
         position: relative;
         z-index: 2;
-        flex: 0 0 55%;
-        max-width: 55%;
-        padding: 4rem 3rem;
+        flex: 0 0 auto;
+        width: 520px;
+        max-width: 48%;
+        padding: 4rem 2rem 4rem 6%;
         margin-top: 0;
     }
 
