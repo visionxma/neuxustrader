@@ -565,8 +565,8 @@ body {
         background: linear-gradient(
             to right,
             rgba(7, 7, 7, 1)    0%,
-            rgba(7, 7, 7, 0.92) 30%,
-            rgba(7, 7, 7, 0.4)  60%,
+            rgba(7, 7, 7, 0.95) 40%,
+            rgba(7, 7, 7, 0.55) 68%,
             rgba(7, 7, 7, 0)    100%
         );
         bottom: 0;
@@ -580,9 +580,9 @@ body {
         position: relative;
         z-index: 2;
         flex: 0 0 auto;
-        width: 520px;
-        max-width: 48%;
-        padding: 4rem 2rem 4rem 6%;
+        width: 65%;
+        max-width: 65%;
+        padding: 4rem 4rem 4rem 6%;
         margin-top: 0;
     }
 
