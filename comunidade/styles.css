@@ -539,7 +539,8 @@ body {
         text-align: left;
         padding: 0;
         position: relative;
-        min-height: 620px;
+        min-height: calc(100vh - 80px);
+        height: calc(100vh - 80px);
         overflow: hidden;
     }
 
