@@ -15,20 +15,23 @@
 
     <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1666473931148128'); // Inicialização do pixel meta 
-    fbq('track', 'PageView'); // Rastreio de visualização de página
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1666473931148128'); // Inicialização do pixel meta 
+        fbq('track', 'PageView'); // Rastreio de visualização de página
+        fbq('track', 'Purchase', { value: 0.00, currency: 'BRL' }); // Rastreio de Compra no carregamento
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1666473931148128&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=1666473931148128&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
 </head>
 
@@ -90,11 +93,15 @@
 
             <div class="hero-content">
                 <div class="author-label">NEXUS TRADERS</div>
-                <h1 class="main-title">Chega de operar com GALE, <span class="gold-highlight">isso é papinho de guru</span></h1>
+                <h1 class="main-title">Chega de operar com GALE, <span class="gold-highlight">isso é papinho de
+                        guru</span></h1>
                 <p class="description">
-                    Aqui você vai operar com <strong>estratégia e gestão!</strong> Como um verdadeiro trader. O mercado financeiro não é aposta, é estratégia, e eu vou te ensinar tudo isso no meu <strong>grupo seleto 100% de forma gratuita.</strong> Os acessos são limitados. 
+                    Aqui você vai operar com <strong>estratégia e gestão!</strong> Como um verdadeiro trader. O mercado
+                    financeiro não é aposta, é estratégia, e eu vou te ensinar tudo isso no meu <strong>grupo seleto
+                        100% de forma gratuita.</strong> Os acessos são limitados.
                     <br><br>
-                    Chega de operar com gale e perder seu capital. Clique no botão abaixo e entre na <strong>comunidade do WhatsApp</strong>.
+                    Chega de operar com gale e perder seu capital. Clique no botão abaixo e entre na <strong>comunidade
+                        do WhatsApp</strong>.
                 </p>
 
                 <a href="https://chat.whatsapp.com/FEUis58HA8vIhUFfbeKWz0" target="_blank" class="btn-primary">
